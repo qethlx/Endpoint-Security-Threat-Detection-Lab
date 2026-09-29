@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2026-09-29T09:10:01Z",
+    "host": "WS-FIN-014",
+    "user": "analyst",
+    "event_type": "process_start",
+    "process": "powershell.exe",
+    "command_line": "powershell.exe -NoProfile -EncodedCommand SQBFAFgA",
+    "parent_process": "winword.exe",
+    "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  },
+  {
+    "timestamp": "2026-09-29T09:10:03Z",
+    "host": "WS-FIN-014",
+    "user": "analyst",
+    "event_type": "network_connection",
+    "process": "powershell.exe",
+    "destination_ip": "203.0.113.66",
+    "destination_domain": "evil-example.test",
+    "destination_port": 443
+  },
+  {
+    "timestamp": "2026-09-29T09:10:04Z",
+    "host": "WS-FIN-014",
+    "user": "analyst",
+    "event_type": "file_write",
+    "process": "powershell.exe",
+    "path": "C:\\Users\\analyst\\AppData\\Local\\Temp\\update.exe",
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  {
+    "timestamp": "2026-09-29T09:11:22Z",
+    "host": "WS-HR-007",
+    "user": "user1",
+    "event_type": "process_start",
+    "process": "notepad.exe",
+    "command_line": "notepad.exe C:\\Users\\user1\\Documents\\notes.txt",
+    "parent_process": "explorer.exe",
+    "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+  }
+]

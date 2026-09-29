@@ -1,0 +1,5 @@
+{
+  "ips": ["203.0.113.66", "198.51.100.23"],
+  "domains": ["evil-example.test", "c2-example.test"],
+  "sha256": ["aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"]
+}

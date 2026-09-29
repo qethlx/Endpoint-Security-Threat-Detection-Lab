@@ -1,0 +1,58 @@
+{
+  "project": "Endpoint Security & Threat Detection Lab",
+  "events_processed": 4,
+  "detections": 4,
+  "incidents": [
+    {
+      "incident_id": "INC-8A572B76",
+      "host": "WS-FIN-014",
+      "severity": "CRITICAL",
+      "confidence": 99,
+      "detections": [
+        {
+          "rule_id": "EDR-001",
+          "title": "Encoded PowerShell execution",
+          "severity": "HIGH",
+          "confidence": 90,
+          "technique": "T1059.001",
+          "event_index": 0,
+          "reason": "PowerShell was launched with an encoded command."
+        },
+        {
+          "rule_id": "TI-001",
+          "title": "IOC network match",
+          "severity": "CRITICAL",
+          "confidence": 98,
+          "technique": "T1071.001",
+          "event_index": 1,
+          "reason": "Network telemetry matched a configured threat-intelligence IOC."
+        },
+        {
+          "rule_id": "TI-002",
+          "title": "IOC file-hash match",
+          "severity": "CRITICAL",
+          "confidence": 99,
+          "technique": "T1105",
+          "event_index": 2,
+          "reason": "Observed file hash matched a configured IOC."
+        },
+        {
+          "rule_id": "EDR-002",
+          "title": "Executable written to temporary directory",
+          "severity": "MEDIUM",
+          "confidence": 78,
+          "technique": "T1105",
+          "event_index": 2,
+          "reason": "An executable was written under a temporary user directory."
+        }
+      ],
+      "recommended_actions": [
+        "Isolate the affected endpoint if confirmed malicious.",
+        "Preserve relevant endpoint and network logs for investigation.",
+        "Review the parent process and user activity around the alert.",
+        "Block confirmed malicious indicators at appropriate controls.",
+        "Reset affected credentials if credential compromise is suspected."
+      ]
+    }
+  ]
+}
